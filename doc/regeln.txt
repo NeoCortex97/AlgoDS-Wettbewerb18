@@ -1,0 +1,95 @@
+Willkommen beim Programmierwettbewerb!
+
+Unabhängig vom Wettbewerb sollten Sie Ihr Programm, oder eine andere
+Version Ihres Programms, als "normale" Abgabe einreichen. Für die
+"normale" Abgabe laden Sie die jar-Datei als Aufgabe 6 hoch.
+
+Möchten Sie an unserem Wettbewerb teilnehmen, müssen Sie zusätzlich
+das jar-File als Aufgabe 13 abgeben. Alle Wettbewerbseingaben werden
+zeitnah automatisiert durch ein Skript auf dem Rechnercluster des ITS
+getestet. Da das Cluster nach Ausfall einer Klimaanlage derzeit
+gestört ist, läuft auch unser Skript zunächst im Testbetrieb. Wir
+erwarten, dass es ab 11.6. zuverlässig arbeitet.
+
+Sollten wir beim Test Ihres Programms Fehler feststellen, werden Sie
+per Email informiert. Ansonsten wird die Laufzeit in eine Bestenliste
+aufgenommen, welche unter
+https://www.plm.eecs.uni-kassel.de/AD2018/
+veröffentlicht und ständig aktualisiert wird.
+
+Bitte reichen Sie Ihre Lösungen baldmöglichst ein, um mit den anderen
+Teilnehmern in Wettbewerb zu treten. Sie können Ihre Programme
+beliebig oft verbessern und so in der Bestenliste aufsteigen.  Als
+Anreiz für eine zeitnahe Abgabe erhält jeder Teilnehmer, dessen
+Programm sich (ab dem 11.6.) für mindestens 24 Stunden unter den Top 3
+hält, einen Anerkennungspreis.
+
+Die abschließenden Laufzeitmessungen werden nach der finalen Abgabe
+am 5.7. ab 8 Uhr durchgeführt. Auf dieser Basis wird der Sieger
+ermittelt.  Die Siegerehrung findet in der Vorlesung am 9.7. statt.
+
+Damit Ihr Programm automatisiert getestet werden kann, müssen Sie sich
+exakt an das folgende Format halten:
+
+Programmaufruf durch:
+ java Prime 8 333
+ (für n = 8 und seed = 333)
+
+Ausgabeformat:
+bestGain = 1767804
+steps: 4 4 3 2 1 1
+
+Ihr Programm darf keine package-Anweisung und auch keine Umlaute oder
+Sonderzeichen enthalten (auch nicht in Kommentaren).
+
+Zusätzlich zum Programm muss Ihr jar-Archiv eine Datei team.txt mit
+dem Namen enthalten, unter dem Ihr Ergebnis in der Bestenliste
+veröffentlicht werden soll. Sie können wahlweise Ihren echten Namen
+(bzw. die Namen beider Teampartner) oder ein Pseudonym verwenden
+(z.B. "Bernd Beispiel", "Gökce und Käthe", "Team Superschnell"). Es
+dürfen max. 20 Zeichen sein, keine Kommas oder Sonderzeichen. Sollte
+die Datei fehlen, werden die Ergebnisse unter Ihrer Matrikelnummer
+(leicht anonymisiert) veröffentlicht.
+
+Wenn Sie als Zweierteam am Wettbewerb teilnehmen, sollte immer der
+gleiche Teampartner die Lösungen einreichen. Zweierteams müssen sich
+ggf. den Gewinn teilen.  Teams aus mehr als zwei Studierenden sind
+unzulässig.  Ebenfalls unzulässig ist ein Austausch von Quellcode oder
+Lösungsideen über die Zweierteams hinaus.
+
+
+Im Programm dürfen Sie keinerlei Parallelisierung benutzen, weder
+explizit über Java-Threads noch durch Verwendung optimierter Methoden
+der Java-Klassenbibliothek. Grundsätzlich ist die Verwendung
+fortgeschrittener Funktionalität der Java-Klassenbibliothek (oder auch
+anderer Bibliotheken) nicht im Sinne des Wettbewerbs. D.h.,
+random.nextInt, System.out.println, oder auch ArrayList sind okay,
+aber wenn Sie andere Funktionalitäten benutzen möchten, fragen Sie
+bitte zunächst im Forum. Unzulässig ist außerdem das Einlesen vorab
+berechneter Werte aus Dateien! Spätestens bei der Endauswertung werden
+die Programme bzgl. dieser Kriterien überprüft.
+
+Wie schon vorab im Forum geschrieben, wird die Gesamtlaufzeit der
+Programme (inklusive Initialisierung und Ausgabe) mit Hilfe des
+time-Befehls von Linux ermittelt. Die Laufzeitmessungen werden
+voraussichtlich auf der exec-Partition des ITS-Clusters
+durchgeführt. Um die Laufzeit Ihres Programms zu ermitteln, reichen
+Sie es am besten ein und warten auf die Anzeige in der Bestenliste.
+
+Alternativ können Sie die Laufzeit selbst messen. Dazu verwenden Sie
+das Slurm-Skript von der Moodle-Seite und informieren sich auf den
+ITS-Seiten über die Benutzung des Clusters. Bitte gehen Sie sparsam
+mit den ITS-Ressourcen um und vermeiden Sie zeitaufwändige Tests.
+
+Die Eingabegröße für die Messungen wird im Laufe des Semesters
+schrittweise an die abgegebenen Programme angepasst, so dass die Größe
+des drittschnellsten Programms idealerweise bei ca. 30 sec. liegt. Die
+aktuell verwendete Eingabegröße finden Sie bei der Bestenliste.  Für
+Programme mit einer Laufzeit von mehr als 5 Minuten wird "TIMEOUT"
+angezeigt.
+
+
+Sollten weitere Anpassungen nötig werden, informieren wir Sie über das
+Diskussionsforum auf der Moodle-Seite. Bitte abonnieren Sie dieses.
+
+Zuletzt geändert: Freitag, 8. Juni 2018, 09:14
