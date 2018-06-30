@@ -3,9 +3,8 @@ import java.util.*;
 class Prime {
   class CustomPair{
 
-    public CustomPair(long gain, long primeDiv, int i){
+    public CustomPair(long gain, int i){
       this.gain = gain;
-      this.primeDiv = primeDiv;
       this.i = i;
     }
 
@@ -29,12 +28,19 @@ class Prime {
     PrimeNum p = new PrimeNum();
     int number = p.start();
     long maxBorder = tmp / 2;
+    int gain = 0;
 
-    // Find higest prime divisor
-
+    // Find higest prime divisor start
+    while (number >= maxBorder) {
+      if (tmp % number == 0 && number > gain) {
+        gain = number
+      }else{
+        number = p.next();
+      }
+    }
     // Find higest prime divisor end
 
-    return customPair(gain, PrimeD, i)
+    return customPair(gain, i);
   }
 
   class PrimeNum{
