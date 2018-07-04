@@ -61,7 +61,7 @@ tmpMaxPos = 0;
 	}
      }
      commonGain += tmpMaxGain;
-     result += " " + tmpMaxGain.toString();
+     result += " " + tmpMaxPos.toString();
      ++start;
     }
   }
