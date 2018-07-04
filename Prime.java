@@ -23,7 +23,7 @@ class Prime {
 
   }
 
-  private customPair test(int preI, int i, int postI){
+  private int test(int preI, int i, int postI){
     long tmp = ((preI * 10) + i) * 10 + postI;
     PrimeNum p = new PrimeNum();
     int number = p.start();
@@ -41,6 +41,29 @@ class Prime {
     // Find higest prime divisor end
 
     return customPair(gain, i);
+  }
+
+  public String run(int[] data){
+    int start = 1;
+    int commonGain = 0;
+    int tmpMaxGain;
+    int tmpMaxPos;
+    int[] gains = new int[];
+    String result = "Steps:";
+    while(start < data.length - 1){
+     tmpMaxGain = 0;
+tmpMaxPos = 0;
+     for(int i = start; i < data.length() - 1; ++i){
+        gains[i] = test(data - 1, data, data + 1);
+        if(gains[i] > tmpMaxGain){
+	  tmpMaxGain = gains[i];
+	  tmpMaxPos = i;
+	}
+     }
+     commonGain += tmpMaxGain;
+     result += " " + tmpMaxGain.toString();
+     ++start;
+    }
   }
 
   class PrimeNum{
